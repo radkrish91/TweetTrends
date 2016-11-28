@@ -1,0 +1,40 @@
+<!-- This view is controlled by the realController (see controller.js file-->
+
+<!--script src="./static/js/myScript.js"></script>
+	<!-- container to hold the values for the real infrastructure in NJ, having default values -->
+	<div class="container">
+		<div class="row">
+			<form name="realForm" class="col s6 z-depth-0">
+			  <div class="row">
+				<div class="col s12">
+				<!-- Select button, when user clicks a value from dropdown, will call hasChanged function (see controller.js file-->
+				<md-input-container class="md-block">
+					<label>Choose keyword</label>
+					<md-select ng-model="selectedKeyword" ng-change="hasChanged()">
+					 <md-option ng-repeat="option in availableOptions" value="{{option.name}}" >{{option.name}}</md-option>
+					</md-select>
+				</md-input-container>
+				<md-list>
+					<md-list-item class="md-2-line contact-item selected" ng-repeat="item in items">
+				        <img ng-src="{{item.image1}}" class="md-avatar" alt="{{item.name1}}">
+				        <div class="md-list-item-text compact">
+				          <h3>{{item.name1}}</h3>
+				        </div>
+				        <img ng-src="{{item.image2}}" class="md-avatar" alt="{{item.name2}}">
+				        <div class="md-list-item-text compact">
+				          <h3>{{item.name2}}</h3>
+				        </div>
+				        <img ng-src="{{item.image3}}" class="md-avatar" alt="{{item.name3}}">
+				        <div class="md-list-item-text compact">
+				          <h3>{{item.name3}}</h3>
+				        </div>
+				     </md-list-item>
+				</md-list>
+				</div>
+			  </div>			  
+			</form>
+			<div class="row">
+				<div id="map_canvas"></div>
+			</div>
+		</div>
+	</div>
