@@ -33,5 +33,4 @@ SQS and SNS
 
 # Architecture Diagram
 
-![Architecture image]
-(https://raw.githubusercontent.com/Vignesh6v/Tweet-Trends/master/static/ouIDUJT.png)
+![Architecture image](https://raw.githubusercontent.com/Vignesh6v/Tweet-Trends/master/static/ouIDUJT.png)
